@@ -1,5 +1,5 @@
 {
-  "name": "types",
+  "name": "@meta-utils/types",
   "version": "1.0.0",
   "description": "A package containing useful TypeScript types",
   "main": "bin/index.js",
