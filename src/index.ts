@@ -186,3 +186,28 @@ type L = KnownKeys<Foo>;
 type M = RequiredKnownKeys<Foo>;
 type N = OptionalKnownKeys<Foo>;
 //*/
+
+/*
+type  AccessorMethodTo<T> =
+  UnionToIntersection<
+    {
+      [K in keyof T]: (key: K) => T[K]
+    }[keyof T]
+  >;
+//
+
+declare var bar: Bar;
+
+interface Bar
+{
+    a: string;
+    b: 42;
+    c: boolean;
+}
+
+const barAccessor:
+    AccessorMethodTo<Bar>
+    = (k: keyof Bar) => bar[k] as any;
+
+
+//*/
