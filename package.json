@@ -1,20 +1,17 @@
 {
   "name": "@meta-utils/types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package containing useful TypeScript types",
   "main": "bin/index.js",
   "types": "bin/index.d.ts",
-
   "scripts": {
     "build": "tsc",
     "test": "tslint --project ."
   },
-
   "repository": "git@github.com:meta-utils/types.git",
   "author": "Michal Grňo <m93a>",
   "license": "MIT",
   "private": false,
-
   "devDependencies": {
     "tslint": "^5.11.0",
     "typescript": "^3.2.1"
